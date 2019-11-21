@@ -6,6 +6,7 @@ import Img from "gatsby-image"
 import ReactMarkdown from "react-markdown"
 
 const IndexPage = ({ data }) => {
+  console.log("ENV DEPLOY URL", process.env.DEPLOY_URL)
   var {
     allStrapiArticle: { edges },
   } = data
